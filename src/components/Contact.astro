@@ -1,0 +1,49 @@
+---
+import Social from "../components/Social.astro"
+import Maps from "../components/Maps.astro"
+import FormContact from "../components/FormContact.astro"
+import Location from "../icons/Location.astro"
+import Mail from "../icons/Mail.astro"
+
+import {info} from "../data.json"
+---
+
+<footer class="bg-blue-800">
+    <section>
+        <Social/>
+        <Maps/>
+        <div class="contact-item">
+            <Mail/> <a href="">
+                {info[0].email}
+             </a>
+        </div>
+        
+        <div class="contact-item">
+            <Location/> <span>{info[0].location}</span>
+        </div>
+    </section>
+    <section>
+        <FormContact> 
+    </section>
+    
+</footer>
+<style>
+    footer{
+        padding:2rem;
+        color: rgb(184, 176, 176);    
+        display: flex;
+        justify-content: center;
+    }
+    section {
+        
+        display: flex;
+        flex-basis: 50%;
+        flex-direction: column;
+    }
+    .contact-item {
+        display: flex;
+        align-items: center;
+        
+    }
+    
+</style>

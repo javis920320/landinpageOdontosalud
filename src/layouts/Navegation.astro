@@ -1,0 +1,88 @@
+---
+import { Image } from 'astro:assets';
+import logo from "../images/logo.png"
+
+
+---
+<nav class="menu close">
+    <!-- <img width="100" height="50" src="../images/logo.png" /> -->
+    <Image src={logo}  width="150" height="50" alt="Una Imagen de prueba"></Image>
+
+    <ul class="items text-blue-800">
+      <li>Home</li>
+      <li>Nosotros</li>
+      <li>Servicios</li>
+      <li>Cita</li>
+      <li>Contacto</li>
+    </ul>
+    <ul>
+      <!-- <Phone /><a href=`tel:+57${phone.phone}`> +57 {phone.phone}</a> -->
+      <li>
+        <button>Agendar cita</button>
+      </li>
+    </ul>
+  </nav>
+  <style>
+    
+  nav {
+
+    color: rgb(64, 64, 170);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+    width: 90vw;
+  }
+  ul {
+    margin: 1rem;
+    display: flex;
+   
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    font-size: larger;
+    font-weight: bold;
+    gap: 1rem;
+    /* align-content: center; */
+  }
+  button {
+    border: solid 1px rgb(29, 17, 97);
+    border-radius: 20px;
+    padding: 0.75rem;
+  }
+  button:hover {
+    background-color: rgb(40, 40, 110);
+    color: white;
+    border: 1px solid white;
+  }
+
+  .items > li:hover {
+    /* text-decoration: underline; */
+    font-size: larger;
+    cursor: pointer;
+    transition: ease;
+  }
+
+  @media (max-width: 400px) {
+ .menu{
+    background-color: aliceblue;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 80%;
+    height: 100%;
+     
+ }   
+  .close{
+left: -380px;
+  }
+ ul{
+    justify-content: flex-start;
+        flex-direction: column;
+    }
+  }
+  </style>

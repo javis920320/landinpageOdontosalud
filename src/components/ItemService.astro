@@ -1,0 +1,45 @@
+---
+const { name } = Astro.props;
+import Clock from "../icons/Clock.astro";
+---
+
+<button class="button">
+  
+  <Clock/>
+  {name}
+</button>
+<style>
+  .button {
+    
+    width: max-content;
+    display: flex;
+    padding: 1.2em 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 30px;
+    text-shadow: 2px 2px 3px rgba(0, 25, 136, 0.5);
+    
+    background-size: 300%;
+    color: #dddcdc;
+    border: none;
+    background-position: left center;
+    box-shadow: 0 30px 10px -20px rgba(0, 0, 0, 0.2);
+    
+  }
+
+  .button:hover {
+    background-size: 320%;
+    background-position: right center;
+  }
+
+  .button:hover svg {
+    fill: #fff;
+  }
+
+  .button svg {
+    width: 23px;
+    fill: #f09f33;
+    transition: 0.3s ease;
+  }
+</style>

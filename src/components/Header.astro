@@ -1,0 +1,28 @@
+---
+import "animate.css";
+import Navigation from "../layouts/Navegation.astro";
+import HeaderContent from "./HeaderContent.astro";
+import { info } from "../data.json";
+const [phone] = info;
+---
+
+<header>
+  <Navigation /> 
+  <HeaderContent/>  
+
+
+</header>
+<style>
+  header {
+    background-color: rgb(244, 245, 255);
+    width: 100%;
+    /* display: grid;
+    align-items: center;
+    justify-items: center; */
+    padding: 1rem;
+    font-size: 1.2rem; /* Ajustado para una mejor legibilidad en dispositivos */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente más legible y responsiva */
+  }
+
+  
+</style>

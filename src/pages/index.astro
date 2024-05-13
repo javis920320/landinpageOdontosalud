@@ -1,0 +1,68 @@
+---
+import Header from "../components/Header.astro";
+import Servicios from "../components/Servicios.astro";
+import Planes from "../components/Planes.astro";
+import  Contact from "../components/Contact.astro"
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <title>Astro</title>
+  </head>
+  <body>
+    <Header />
+     <Servicios /> 
+    <Planes />
+    <Contact/> 
+  </body>
+</html>
+
+<style>
+  
+  :root {
+    /*Definicion de variable CSS*/
+    --color-fondo: #ffffff;
+    --color-texto: #1b2e57;
+  }
+  * {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: content-box;
+  }
+  .dark-mode {
+    --color-fondo: #333333;
+    --color-texto: #ffffff;
+  }
+
+ 
+</style>
+<style is:global>
+	<style>
+    
+
+
+
+  
+
+  body {
+    
+    background-color: var(--color-fondo);
+    min-width: 100vw;
+    display: grid;
+    place-content: center;
+    align-content: center;
+  }
+  body{
+    font-family:  sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  }
+</style>
