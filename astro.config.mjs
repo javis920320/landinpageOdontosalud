@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import tailwind from "@astrojs/tailwind";
+import { api_google } from './src/env';
 
 export default defineConfig({
   integrations: [
@@ -7,7 +8,7 @@ export default defineConfig({
     {
       name: 'google-maps', // Nombre de la integración de Google Maps
       async script({ loadInlineScript }) {
-        await loadInlineScript(`https://maps.googleapis.com/maps/api/js?key=AIzaSyCmKB-jfnl8o4jrpU_o3puNwZfcxLUXs0o`);
+        await loadInlineScript(api_google);
       },
     },
   ],
