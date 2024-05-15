@@ -1,37 +1,38 @@
 ---
 import Phone from "../icons/Phone.astro";
 import InforAtencion from "./InfoAtencion.astro";
+import banner1 from "../images/image-banner1.png";
+import { Image } from "astro:assets";
+import Servicios from "./Servicios.astro";
 ---
 
-<section class="contenido-header">
+<section class="contenido-header mt-28">
+
   <div class="animate__animated animate__fadeInLeft">
-    <h1 class="text text-blue-800">Sonríe con confianza Tu Sonrisa, Nuestra Pasión</h1>
-    <p class="text-justify text-gray-700"></p>
+    <h1
+      class="text-current text-balance font-semibold font-serif text-gray-600"
+    >
+      Sonríe con confianza Tu Sonrisa, Nuestra Pasión
+    </h1>
+    <p class="text-slate-700 text-start text-2xl text-current font-sans">
       Bienvenido a nuestra clínica dental, donde tu sonrisa es nuestra
-      prioridad.
-    
-    
-      Descubre nuestra dedicación a tu salud bucal y la belleza de tu sonrisa.
-      Con tratamientos diseñados para tu comodidad y resultados excepcionales,
-      estamos aquí para cuidarte y hacerte sentir seguro en cada visita. ¡Únete
-      a nosotros en el camino hacia una sonrisa radiante y saludable!
+      prioridad. Descubre nuestra dedicación a tu salud bucal y la belleza de tu
+      sonrisa. Con tratamientos diseñados para tu comodidad y resultados
+      excepcionales, estamos aquí para cuidarte y hacerte sentir seguro en cada
+      visita. ¡Únete a nosotros en el camino hacia una sonrisa radiante y
+      saludable!
     </p>
 
     <InforAtencion />
   </div>
-  <div class="image-card">
-    <img
-      width="230"
-      src="https://media.istockphoto.com/id/1496615764/es/foto/joven-alegre-con-anteojos-sonriendo-y-mirando-a-la-c%C3%A1mara.jpg?s=1024x1024&w=is&k=20&c=JvOuWPeAv7HSmVXyWTHKOBDb_pyHpDZQOlTt3DAhgks="
-      alt=""
+  <div>
+    <Image
+      height="600"
+      src={banner1}
+      alt="Odontosalud  consultorio odontologico - Pasto"
     />
-    <img
-      width="230"
-      src="https://media.istockphoto.com/id/503190435/es/foto/columbia-ni%C3%B1a-divertirse-aspecto.jpg?s=1024x1024&w=is&k=20&c=Wl63r2mVN6izKn4NCNOLvZU2codHgpH9zKQHyZyrhsQ="
-      alt=""
-    />
-    <span>Atrevete a sonreir</span>
   </div>
+  
 </section>
 <style>
   h1 {

@@ -7,49 +7,33 @@ const { phone } = info[0];
 ---
 
 <section>
-  <ul class="section-list">
-    <!-- {
-      atencion.map(({ name, dias, hora }) => (
-        <div class="stats shadow">
-          <div class="stat">
-            <div class="stat-figure text-secondary">
-              <Clock />
-            </div>
-            <div class="stat-title text-xl text-blue-800">{name}</div>
-            <div class="stat-value text-slate-400">{dias}</div>
-            <div class="stat-desc text-slate-400">{hora}</div>
-          </div>
-        </div>
-      ))
-    } -->
-    {
-      atencion.map(({ name, hora, dias }) => {
-        return (
-          <div>
-            <span class="text-sky-800"> ✅{name}:</span>
-            <p class="text-slate-500">{dias}</p>
-            <span class="text-slate-400"> {hora}</span>
-          </div>
-        );
-      })
-    }
-  </ul>
-</section>
-<style>
-  section {
-    margin-top: 2rem;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    font-family: Arial, sans-serif; /* Cambio de fuente */
-  }
+  {
+    atencion.map(({ name, hora, dias, slug }) => {
+      let emoji;
+      switch (slug) {
+        case "hr":
+          emoji = "⏰"; // Reloj
+          break;
+        case "rc":
+          emoji = "📒"; // Libreta
+          break;
+        case "se":
+          emoji = "🚑"; // Ambulancia
+          break;
+        default:
+          emoji = "❓"; // Emoji por defecto si no coincide ningún caso
+      }
 
-  .section-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    gap: 4rem;
+      return (
+        <div>
+          <span>{emoji}</span>  <span class="font-mono">{name}:</span>
+          <p class="underline text-slate-500">{dias}</p>
+         <time class="text-slate-400">{hora}</time>
+          
+        </div>
+      );
+    })
   }
-</style>
+</section>
+
+

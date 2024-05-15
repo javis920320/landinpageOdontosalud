@@ -4,18 +4,18 @@
         {"phone":"3145658247","email":"info@example.com","location":"San Juan de Pasto | Corregimiento de  La Laguna ","name":"Diego Fernando Potosi"}
     ],
     "atencion":[
-        {"name":"Horario de trabajo","dias":"Lunes - Viernes","hora":"9:00 AM - 12:00 PM"},
-        {"name":"Reserva de citas","dias":"Lunes - Viernes","hora":"9:00 AM -  12:00 PM"},
-        {"name":"Servicio de emergencias 24/7","dias":"Linea de Emergencia ","hora":"3145658247"}
+        {"slug":"hr","name":"Horario de trabajo","dias":"Lunes - Viernes","hora":"9:00 AM - 12:00 PM"},
+        {"slug":"rc","name":"Reserva de citas","dias":"Lunes - Viernes","hora":"9:00 AM -  12:00 PM"},
+        {"slug":"se","name":"Servicio de emergencias 24/7","dias":"Linea de Emergencia ","hora":"3145658247"}
     ],
 
     "servicios":[
-        {"name":"Cirugía Oral","desc":"Tratamiento de afecciones que afectan los tejidos blandos y duros de la boca, como dientes impactados, quistes y tumores"},
-        {"name":"Endodoncia","desc":"Tratamiento del conducto radicular, la parte interna del diente que contiene el nervio y los vasos sanguíneos."},
-        {"name":"Rehabilitacion Oral", "desc":" Restauración de la función y la estética de la boca mediante prótesis dentales, coronas y puentes."},
-        {"name":"Implantes","desc":"Sustitución de dientes perdidos por implantes dentales, que son fijaciones de titanio que se integran al hueso maxilar."},
+        {"name":"Cirugía Oral","desc":"Tratamiento de afecciones que afectan los tejidos blandos y duros de la boca, como dientes impactados, quistes y tumores","imgUrl":"https://plus.unsplash.com/premium_photo-1672922646586-69f83e074a89?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2lydWppYSUyMG9yYWx8ZW58MHx8MHx8fDA%3D"},
+        {"name":"Endodoncia","desc":"Tratamiento del conducto radicular, la parte interna del diente que contiene el nervio y los vasos sanguíneos.","imgUrl":"https://plus.unsplash.com/premium_photo-1661751789313-839b056da0c5?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZW5kb2RvbmNpYXxlbnwwfHwwfHx8MA%3D%3D"},
+        {"name":"Rehabilitacion Oral", "desc":" Restauración de la función y la estética de la boca mediante prótesis dentales, coronas y puentes.", "imgUrl":"https://images.pexels.com/photos/3845550/pexels-photo-3845550.jpeg?auto=compress&cs=tinysrgb&w=400"},
+        {"name":"Implantes","desc":"Sustitución de dientes perdidos por implantes dentales, que son fijaciones de titanio que se integran al hueso maxilar.", "imgUrl":"https://images.unsplash.com/photo-1468493858157-0da44aaf1d13?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1wbGFudGVzJTIwZGVudGFsZXN8ZW58MHx8MHx8fDA%3D"},
         {"name":"Blanqueamiento Dental","desc":"Aclaramiento del color de los dientes para una sonrisa más brillante."},
-        {"name":"Diseño de sonrisa","desc":"Creación de una sonrisa personalizada mediante procedimientos como carillas y coronas."},
+        {"name":"Diseño de sonrisa","desc":"Creación de una sonrisa personalizada mediante procedimientos como carillas y coronas." ,"imgUrl":"https://images.unsplash.com/photo-1606142979064-349704d230e3?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8RGllc2UlQzMlQjFvJTIwZGUlMjBzb25yaXNhfGVufDB8fDB8fHww"},
         {"name":"Periodonsia","desc":"Tratamiento de las enfermedades de las encías, que pueden afectar el hueso que sostiene los dientes."},
         {"name":"Ortodoncia","desc":"Corrección de la posición de los dientes para mejorar la mordida y la estética facial."},
         {"name":"Odontopedriatria","desc":"Cuidado dental para niños, desde la dentición hasta la adolescencia."},

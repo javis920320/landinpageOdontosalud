@@ -4,22 +4,21 @@ import logo from "../images/logo.png"
 
 
 ---
-<nav class="menu close">
-    <!-- <img width="100" height="50" src="../images/logo.png" /> -->
+<nav >   
     <Image src={logo}  width="150" height="50" alt="Una Imagen de prueba"></Image>
 
-    <ul class="items text-blue-800">
-      <li>Home</li>
-      <li>Nosotros</li>
-      <li>Servicios</li>
-      <li>Cita</li>
-      <li>Contacto</li>
+    <ul class="text-blue-950 text-current cursor-pointer">
+      <li> <a href="#home">Home</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#footer">Contacto</a></li>
+      
     </ul>
     <ul>
       <!-- <Phone /><a href=`tel:+57${phone.phone}`> +57 {phone.phone}</a> -->
-      <li>
+   <!--    <li>
         <button>Agendar cita</button>
-      </li>
+      </li> -->
     </ul>
   </nav>
   <style>
