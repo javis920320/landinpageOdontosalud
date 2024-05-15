@@ -1,7 +1,7 @@
 {
     "info":[
 
-        {"phone":"3145658247","email":"info@example.com","location":"San Juan de Pasto | Corregimiento de  La Laguna "}
+        {"phone":"3145658247","email":"info@example.com","location":"San Juan de Pasto | Corregimiento de  La Laguna ","name":"Diego Fernando Potosi"}
     ],
     "atencion":[
         {"name":"Horario de trabajo","dias":"Lunes - Viernes","hora":"9:00 AM - 12:00 PM"},
@@ -10,6 +10,16 @@
     ],
 
     "servicios":[
+        {"name":"Cirugía Oral","desc":"Tratamiento de afecciones que afectan los tejidos blandos y duros de la boca, como dientes impactados, quistes y tumores"},
+        {"name":"Endodoncia","desc":"Tratamiento del conducto radicular, la parte interna del diente que contiene el nervio y los vasos sanguíneos."},
+        {"name":"Rehabilitacion Oral", "desc":" Restauración de la función y la estética de la boca mediante prótesis dentales, coronas y puentes."},
+        {"name":"Implantes","desc":"Sustitución de dientes perdidos por implantes dentales, que son fijaciones de titanio que se integran al hueso maxilar."},
+        {"name":"Blanqueamiento Dental","desc":"Aclaramiento del color de los dientes para una sonrisa más brillante."},
+        {"name":"Diseño de sonrisa","desc":"Creación de una sonrisa personalizada mediante procedimientos como carillas y coronas."},
+        {"name":"Periodonsia","desc":"Tratamiento de las enfermedades de las encías, que pueden afectar el hueso que sostiene los dientes."},
+        {"name":"Ortodoncia","desc":"Corrección de la posición de los dientes para mejorar la mordida y la estética facial."},
+        {"name":"Odontopedriatria","desc":"Cuidado dental para niños, desde la dentición hasta la adolescencia."},
+        {"name":"Inserción, Adaptación y control de prótesis","desc":"Colocación, ajuste y seguimiento de prótesis dentales para reemplazar dientes perdidos"},
         {"name":"Cirugía Oral","desc":"Tratamiento de afecciones que afectan los tejidos blandos y duros de la boca, como dientes impactados, quistes y tumores"},
         {"name":"Endodoncia","desc":"Tratamiento del conducto radicular, la parte interna del diente que contiene el nervio y los vasos sanguíneos."},
         {"name":"Rehabilitacion Oral", "desc":" Restauración de la función y la estética de la boca mediante prótesis dentales, coronas y puentes."},

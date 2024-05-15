@@ -2,7 +2,8 @@
 import Header from "../components/Header.astro";
 import Servicios from "../components/Servicios.astro";
 import Planes from "../components/Planes.astro";
-import  Contact from "../components/Contact.astro"
+import Contact from "../components/Contact.astro";
+import Nosotros from "../components/Nosotros.astro";
 ---
 
 <html lang="en">
@@ -11,19 +12,20 @@ import  Contact from "../components/Contact.astro"
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    
+
     <title>Astro</title>
   </head>
   <body>
     <Header />
-     <Servicios /> 
+  
+    <Nosotros />
+    <Servicios />
     <Planes />
-    <Contact/> 
+    <Contact />
   </body>
 </html>
 
 <style>
-  
   :root {
     /*Definicion de variable CSS*/
     --color-fondo: #ffffff;
@@ -38,31 +40,20 @@ import  Contact from "../components/Contact.astro"
     --color-fondo: #333333;
     --color-texto: #ffffff;
   }
-
- 
 </style>
 <style is:global>
-	<style>
-    
-
-
-
-  
-
-  body {
-    
+  <style > body {
     background-color: var(--color-fondo);
     min-width: 100vw;
     display: grid;
     place-content: center;
     align-content: center;
   }
-  body{
-    font-family:  sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  body {
+    font-family: sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
   }
 </style>

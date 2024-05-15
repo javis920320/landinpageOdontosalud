@@ -6,8 +6,21 @@ import Items from "../components/ItemService.astro";
 
 <section class="mb-8">
   <h2 class="text-2xl font-bold text-center bg">Nuestros Servicios</h2>
-
-  <div class="grid grid-cols-3 gap-4">
+  <div class="tag-list">
+    <div class="inner">
+      {
+        servicios &&
+          servicios.map(({ name }) => (
+            <div class="tag">
+              <span>#</span>
+              {name}
+            </div>
+          ))
+      }
+      <div class="fade"></div>
+    </div>
+  </div>
+  <!-- <div class="grid grid-cols-3 gap-4">
     {
       servicios &&
         servicios.map(({name,desc}) => (
@@ -19,9 +32,64 @@ import Items from "../components/ItemService.astro";
     }
 
 
-  </div>
+  </div> -->
   <style>
-    section {
+    .tag-list {
+      margin: 0 auto;
+      width: 80%;
+      font-weight: 400;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif,
+       'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       
+      position: relative;
+      overflow: hidden;
+    }
+    .inner {
+      width: fit-content;
+      display: flex;
+      gap: 1rem;
+      animation: loop 30s linear infinite;
+    }
+
+    .tag {
+      color: rgb(102, 106, 128);
+      width: 200px;
+      display: flex;
+      align-items: center;
+      gap: 0 0.2rem;
+      font-size: 1.25rem;
+      background-color: #f2f7f5;
+      padding:;
+      border-radius: 0.4rem;
+      box-shadow:
+        0 0.1rem 0.2rem #9ca0a033,
+        0 0.1rem 0.5rem #f0e7e74d,
+        0 0.2rem 1.5rem #cfcdcd66;
+  
+    }
+
+    .tag span {
+      font-size: 1.10rem;
+      color: rgb(12, 107, 190);
+    }
+    .fade {
+      position: absolute;
+      background: linear-gradient(80deg, #b6b8b8, transparent 20%, #e4e4e4);
+      inset: 0;
+      pointer-events: none;
+    }
+
+    @keyframes loop {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+    /*
+     section {
+
     }
 
     .list-services {
@@ -36,15 +104,15 @@ import Items from "../components/ItemService.astro";
       grid-template-columns: repeat(
         auto-fit,
         minmax(15rem, 1fr)
-      ); /* Adjusts column width based on content */
+      ); 
       place-content: center;
       justify-items: center;
-      width: 90%; /* Fixed width for the grid */
+      width: 90%;
     }
 
     @keyframes scroll {
       to {
-        translate: -30rem; /* Matches total width of wrapper (15rem) * 2 */
+        translate: -30rem; 
       }
     }
 
@@ -52,14 +120,14 @@ import Items from "../components/ItemService.astro";
       animation: scroll 15s linear infinite;
     }
 
-    /* Resume animation onmouseout */
+    
     .services:hover {
-      pointer-events: auto; /* Allows animation to resume on mouseout */
+      pointer-events: auto;
       background-color: rgb(189, 194, 194);
     }
 
     .wrapper:hover {
       animation-play-state: paused;
-    }
+    } */
   </style>
 </section>

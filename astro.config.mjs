@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 import tailwind from "@astrojs/tailwind";
-import { api_google } from './src/env';
+import { api_google } from './src/env.d.ts';
 
 export default defineConfig({
   integrations: [
