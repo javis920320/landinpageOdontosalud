@@ -1,30 +1,48 @@
 ---
 import Verify from "../icons/Verify.astro";
-import {info}from "../data.json"
-import Cap from "../icons/Cap.astro"
-const {name}=info[0]
+import { info } from "../data.json";
+import Cap from "../icons/Cap.astro";
+const { name } = info[0];
 ---
 
-<section id="nostros" class=" h-full [transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] border border-transparent max-w-[550px] min-w-[330px] min-h-[550px] dark:border-white/[0.1] shadow-derek dark:bg-[radial-gradient(164.75%_100%_at_50%_0%,#334155_0%,#0F172A_48.73%)] rounded-lg p-4 relative  ">
+<div class="my-20">
+    <h2 class="text-center font-mono text-2xl font-semibold text-gray-700"> Sobre Mi</h2>
+  <section
+    id="nosotros"
+    class="h-full [transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] border border-transparent max-w-[550px] min-w-[330px] min-h-[550px] dark:border-white/[0.1] shadow-derek dark:bg-[radial-gradient(164.75%_100%_at_50%_0%,#334155_0%,#0F172A_48.73%)] rounded-lg p-4 relative"
+  >
     <div class="flex flex-col flex-wrap justify-center items-center">
-        <img class="rounded-full" src="https://scontent.fpso2-1.fna.fbcdn.net/v/t39.30808-6/335250910_733543644902721_3763877423866996647_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFQgOB7qGZ1nbNRXXg8lZAl4uJ76esZlWzi4nvp6xmVbOkmedhQepbPIC1l0Tf90Yo&_nc_ohc=QRD2RJqrheIQ7kNvgF6DcKY&_nc_ht=scontent.fpso2-1.fna&oh=00_AYBL7MgdAHt6K2UVrA8twQqxWvJKoZHVIvNxImH9CWZwnw&oe=66499D42" width="70" height="auto" />
+      <img
+        class="rounded-full"
+        src="https://scontent.fpso2-1.fna.fbcdn.net/v/t39.30808-6/335250910_733543644902721_3763877423866996647_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFQgOB7qGZ1nbNRXXg8lZAl4uJ76esZlWzi4nvp6xmVbOkmedhQepbPIC1l0Tf90Yo&_nc_ohc=QRD2RJqrheIQ7kNvgF6DcKY&_nc_ht=scontent.fpso2-1.fna&oh=00_AYBL7MgdAHt6K2UVrA8twQqxWvJKoZHVIvNxImH9CWZwnw&oe=66499D42"
+        width="70"
+        height="auto"
+      />
 
-        <div class="flex flex-col justify-start items-start ml-4 mb-4">
-            <p class="text-white flex items-center">{name} <Verify/></p>
-            <p class="text-gray-400">@diiegoferr </p>
-            <p class="flex text-gray-400"><Cap/> Universidad Cooperativa  de Pasto</p>
-        </div>
+      <div class="flex flex-col justify-start items-start ml-4 mb-4">
+        <p class="text-white flex items-center">{name} <Verify /></p>
+        <p class="text-gray-400">@diiegoferr</p>
+        <p class="flex text-gray-400">
+          <Cap /> Universidad Cooperativa de Pasto
+        </p>
+      </div>
     </div>
 
     <p class="text-gray-400">
-        ¡Hola! Soy el Dr. Diego Fernando Potosí, tu odontólogo comprometido con tu salud bucal y tu sonrisa radiante. Con formación en la Universidad Cooperativa de la ciudad de Pasto y especialización en Odontología Restauradora, llevo más de 10 años ofreciendo tratamientos personalizados, desde limpiezas hasta implantes dentales y ortodoncia. En mi clínica, te garantizo un ambiente acogedor y atención de calidad. Agenda tu cita y descubre el camino hacia una sonrisa perfecta. ¡Te espero!
+      ¡Hola! Soy el Dr. Diego Fernando Potosí, tu odontólogo comprometido con tu
+      salud bucal y tu sonrisa radiante. Con formación en la Universidad
+      Cooperativa de la ciudad de Pasto y especialización en Odontología
+      Restauradora, llevo más de 10 años ofreciendo tratamientos personalizados,
+      desde limpiezas hasta implantes dentales y ortodoncia. En mi clínica, te
+      garantizo un ambiente acogedor y atención de calidad. Agenda tu cita y
+      descubre el camino hacia una sonrisa perfecta. ¡Te espero!
     </p>
-</section>
+  </section>
+</div>
 <style>
-section{
-    
+  section {
     margin: 0 auto;
+
     align-content: center;
-    
-}
+  }
 </style>
